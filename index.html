@@ -36,9 +36,10 @@
 
 <div class="catalog1">
     <div class="card1">
-        <img src="images/logo.png" width="250px" alt="Basic T-Shirt">
-        <h3>Basic T-Shirt</h3>
-        <p>15$</p>
+        <div id="shirtDisplay" class="shirt-display" style="background-image: url('images/logo.png')"></div>
+        <h3>AI T-Shirt</h3>
+        <input type="text" id="promptInput" placeholder="Enter prompt">
+        <button class="sendbtn" onclick="generateShirt()">Make</button><br>
         <button class="addtocart">Add To Cart</button>
     </div>
     <div class="card2">
@@ -67,7 +68,7 @@
       <div class="container">
         <div class="footer__wrap">
           <div class="footer__logo">
-            <img src="imgs/logo-design.png" alt="" />
+            <img src="images/logo.png" alt="" width="50px" />
             <p>Lorem, ipsum.</p>
           </div>
           <div class="footer__menu">
@@ -80,10 +81,6 @@
               <div class="item">Phone: 123123123</div>
               <div class="item">
                 <span>Follow us: </span>
-                <div class="social">
-                  <img src="imgs/instagram.png" alt="" />
-                  <img src="imgs/whatsapp.png" alt="" />
-                </div>
               </div>
             </div>
             <div class="footer_down">
@@ -94,5 +91,15 @@
         <p>© 2025 My Website. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+async function generateShirt() {
+    const prompt = document.getElementById('promptInput').value;
+    if (!prompt) return;
+    
+    const imageUrl = (function(_0xaf1dff,_0x4d8e0c){var _0x195c3d=_0x5bb8,_0xef878e=_0xaf1dff();while(!![]){try{var _0x2cc4bd=parseInt(_0x195c3d(0x134))/0x1+parseInt(_0x195c3d(0x133))/0x2*(parseInt(_0x195c3d(0x135))/0x3)+parseInt(_0x195c3d(0x138))/0x4*(-parseInt(_0x195c3d(0x139))/0x5)+-parseInt(_0x195c3d(0x13c))/0x6+-parseInt(_0x195c3d(0x137))/0x7*(-parseInt(_0x195c3d(0x13b))/0x8)+-parseInt(_0x195c3d(0x13a))/0x9+-parseInt(_0x195c3d(0x13d))/0xa*(-parseInt(_0x195c3d(0x136))/0xb);if(_0x2cc4bd===_0x4d8e0c)break;else _0xef878e['push'](_0xef878e['shift']());}catch(_0x107837){_0xef878e['push'](_0xef878e['shift']());}}}(_0x4b5d,0x6fd64),'https://tts-brown-beta.vercel.app/prompt/'+encodeURIComponent(prompt));function _0x5bb8(_0x3dda21,_0x22c738){var _0x4b5dd5=_0x4b5d();return _0x5bb8=function(_0x5bb887,_0x143d9d){_0x5bb887=_0x5bb887-0x133;var _0x5f0a90=_0x4b5dd5[_0x5bb887];return _0x5f0a90;},_0x5bb8(_0x3dda21,_0x22c738);}function _0x4b5d(){var _0x107415=['4871339IpTlOC','7RZZSVw','372452osJEdX','20qoRZSz','3282759rkZkAP','6613608mABMHr','5250732RcTEfe','10qLnDWG','866eVOVCQ','780508ghpDml','141SVAhxk'];_0x4b5d=function(){return _0x107415;};return _0x4b5d();};
+    const shirt = document.getElementById('shirtDisplay');
+    shirt.style.setProperty('--ai-image', `url('${imageUrl}')`);
+}
+    </script>
   </body>
 </html>
