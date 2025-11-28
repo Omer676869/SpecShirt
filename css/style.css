@@ -83,15 +83,17 @@ nav a:hover {
 
 .catalog1 {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 40px 0;
-    max-width: 1200px;
+    justify-content: space-around;
+    padding: 40px 20px;
+    max-width: 1400px;
     margin: 0 auto;
-    height: auto;
-    width: 100%;
-    border: none;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.card1, .card2, .card3, .card4 {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .card1 {
