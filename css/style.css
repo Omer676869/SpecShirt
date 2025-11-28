@@ -94,43 +94,142 @@ nav a:hover {
     border: none;
 }
 
-.card1, .card2 {
-    background: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    width: 280px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    margin: 10px;
+.card1 {
+background: white;
+border: 1px solid #e0e0e0;
+border-radius: 8px;
+padding: 20px;
+width: 300px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+margin: 10px;
+}
+.card1:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.card1 img {
+max-width: 100%;
+height: auto;
+margin-bottom: 15px;
+border-radius: 4px;
+}
+.card1 h3 {
+color: #333;
+margin: 10px 0;
+font-size: 1.2em;
+font-family: "Inter", sans-serif;
+}
+.card1 p {
+color: #666;
+font-size: 18px;
+margin: 10px 0;
+font-family: "Inter", sans-serif;
 }
 
-.card1:hover, .card2:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.card2 {
+background: white;
+border: 1px solid #e0e0e0;
+border-radius: 8px;
+padding: 20px;
+width: 300px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+margin: 10px;
+}
+.card2:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.card2 img {
+max-width: 100%;
+height: auto;
+margin-bottom: 15px;
+border-radius: 4px;
+}
+.card2 h3 {
+color: #333;
+margin: 10px 0;
+font-size: 1.2em;
+font-family: "Inter", sans-serif;
+}
+.card2 p {
+color: #666;
+font-size: 18px;
+margin: 10px 0;
+font-family: "Inter", sans-serif;
 }
 
-.card1 img, .card2 img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 4px;
+.card3 {
+background: white;
+border: 1px solid #e0e0e0;
+border-radius: 8px;
+padding: 20px;
+width: 300px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+margin: 10px;
+}
+.card3:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.card3 img {
+max-width: 100%;
+height: auto;
+margin-bottom: 15px;
+border-radius: 4px;
+}
+.card3 h3 {
+color: #333;
+margin: 10px 0;
+font-size: 1.2em;
+font-family: "Inter", sans-serif;
+}
+.card3 p {
+color: #666;
+font-size: 18px;
+margin: 10px 0;
+font-family: "Inter", sans-serif;
 }
 
-.card1 h3, .card2 h3 {
-    color: #333;
-    margin: 10px 0;
-    font-size: 1.2em;
-    font-family: "Inter", sans-serif;
+.card4 {
+background: white;
+border: 1px solid #e0e0e0;
+border-radius: 8px;
+padding: 20px;
+width: 300px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+margin: 10px;
+}
+.card4:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.card4 img {
+max-width: 100%;
+height: auto;
+margin-bottom: 15px;
+border-radius: 4px;
+}
+.card4 h3 {
+color: #333;
+margin: 10px 0;
+font-size: 1.2em;
+font-family: "Inter", sans-serif;
+}
+.card4 p {
+color: #666;
+font-size: 18px;
+margin: 10px 0;
+font-family: "Inter", sans-serif;
 }
 
-.card1 p, .card2 p {
-    color: #666;
-    font-size: 18px;
-    margin: 10px 0;
-    font-family: "Inter", sans-serif;
-}
 
 .addtocart {
     border: 2px solid #000;
